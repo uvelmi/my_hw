@@ -1,0 +1,184 @@
+@media (max-width: 767px) {
+	.center {
+		padding: 0 16px;
+		justify-content: center;
+		align-items: center;
+	}
+	.header{
+		padding-top: 32px;
+		border-bottom: none;
+		&__input{
+			display: none;
+		}
+	}
+	.menu{
+		display: none;
+		&-mob{
+			display: flex;
+			align-items: center;
+			gap: 32px;
+		}
+	}
+	
+	.logo__img{
+		width: 99px;
+	}
+
+	.title{
+		font-size: 48px;
+		line-height: 59px;
+		text-align: center;
+	}
+	.top{
+		&__text{
+			font-size: 16px;
+			line-height: 32px;
+			text-align: center;
+		}
+		&__info{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	.offers{
+		margin-top: 36px;
+		&-box {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__links-box{
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+	
+		}
+	}
+		.goods{
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			&__img{
+				grid-column: 1/-1;
+				width: 100%;
+			}
+		}
+		.offer{
+			grid-column: 1/-1;
+			width: 100%;
+			
+			&__links-box{
+				padding-top: 32px;
+				flex-direction: column; 
+			} 
+	}
+	.select{
+		margin-top: 16px;
+	}
+	
+	.offer__goods{
+		font-size: 18px;
+		line-height: normal;		
+	}
+
+	p.offer__text{
+		font-family: Montserrat;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+
+	}
+	span.offer__price {
+			font-size: 18px;
+			&-sale {
+				font-size: 18px;
+			}
+		}
+	.link{
+		font-size: 14px;
+	}
+	.heading{
+		font-size: 24px;
+		line-height: 29px;
+		&__big{
+			color: #FFF;
+			text-align: center;
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+		}
+	}
+	.furniture{
+		grid-template-columns: repeat(4, 1fr);
+		gap: 16px;
+		&-box {
+			margin-top: 34px;
+		}
+		&__item{
+			grid-column: 1/-1;
+			height: 375px;
+			font-size: 28px;
+			line-height: 34px;
+			&-big{
+				height: 244px;
+			}
+		}
+	}
+	.link__container {
+		margin: 34px 0 34px 0;
+	}
+	.footer{
+		padding-top: 33px;
+		padding-bottom: 32px;
+		&__content{
+			gap: 34px;
+			justify-content: center;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			
+		}
+		&__form{
+			display: grid;
+			justify-items: center;
+		}
+		&__info{
+			gap: 100px;
+			justify-content: center
+		}
+		&__text{
+			font-size: 12px;
+			text-align: center;
+			margin-bottom: 16px;
+		}
+	}
+	
+	.cart{
+			margin: 0 0 0 5px;
+		&__form{
+			grid-column: span 8;
+			
+		}
+		&__input-forms{
+			align-items: center;
+		}
+		&__left{
+			&-img{
+				display: none;
+			}
+		}
+		
+		&__quantity{
+			display: none;
+		}
+		&__price{
+			font-size: 14px;
+			line-height: 15px;
+		}
+		&__btn-size{
+				width: 166px;
+				height: 37px;
+				font-size: 12px;
+				line-height: 15px;
+			}
+	}
+
+}

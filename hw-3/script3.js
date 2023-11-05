@@ -62,33 +62,35 @@ let monthNumber = prompt('Введите номер месяца');
 			console.log("Введите значение от 1 до 12! Неправильный номер!");
 		}
 
-	// task-7
+	// task-7 -- corrected the task
 
 let num = prompt('Пожалуйста, введите любое число');
-	// Добавить проверку: является ли введенное значение числом.
-if (!isNaN(num)) {
-	if (num % 2 === 0) {
+let number = Number(num);
+
+if (isNaN(number)) {
+	alert('Некорректное число!')
+} else {
+	if (number % 2 === 0) {
 		alert('Число четное!');
 	} else {
 		alert('Число нечетное');
 	}
-} else {
-	alert('Некорректное число!')
 }
 
-// task-8 - 9
+
+// task-8 - 9 corrected the task
 
 let clientOS = 0;
 let deviceYear = 2015;
 
 if (clientOS === 0 && deviceYear < 2015) {
-	console.log("Установите облегченную версию приложения для iOS по ссылке");
+	confirm("Установите облегченную версию приложения для iOS по ссылке");
 } else if (clientOS === 0 && deviceYear >= 2015) {
-	console.log("Установите приложение для iOS по ссылке");
+	confirm("Установите приложение для iOS по ссылке");
 } else if (clientOS === 1 && deviceYear < 2015) {
-	console.log("Установите облегченную версию приложения для Android по ссылке");
+	confirm("Установите облегченную версию приложения для Android по ссылке");
 } else if (clientOS === 1 && deviceYear >= 2015) {
-	console.log("Установите приложение для Android по ссылке");
+	confirm("Установите приложение для Android по ссылке");
 } else {
-	console.log("Неподдерживаемая операционная система");
+	confirm("Неподдерживаемая операционная система");
 }

@@ -10,48 +10,47 @@ console.log(getNumber(8, 4));
 console.log(getNumber(6, 6));
 console.log(getNumber(16, 12));
 
-// task 2
+// task 2 added =
 function checkNumber(n) {
-	return n % 2 == 0 ? 'Число четное' : 'Число нечетное';
+	return n % 2 === 0 ? 'Число четное' : 'Число нечетное';
 }
 checkNumber(9);
 
-// task 3
+// task 3 corrected
 function printNumber(n) {
-	result = n * n;
+	let result = n * n;
 	console.log(result);
 }
 printNumber(10);
 
 
-function printNumber(n) {
-	result = n * n;
+function printNumber2(n) {
+	let result = n * n;
 	return result;
 }
-printNumber(3);
-console.log(result);
+printNumber2(3);
 
-// task 4
+// task 4 corrected
 function showAnwer() {
 	let age = prompt('Сколько тебе лет?');
 	age = Number(age);
 	if (age <= 12 && age >= 0) {
-		console.log('Привет, друг!');
+		alert('Привет, друг!');
 	}else if (age < 0) {
-		console.log('Вы ввели неправильное значение!');
+		alert('Вы ввели неправильное значение!');
 	}else {
-		console.log('Добро пожаловать!');
+		alert('Добро пожаловать!');
 	}
 }
 const myAnswer = showAnwer();
-console.log(myAnswer);
 
-// task 5
+
+// task 5 corrected
 function multiplyNumbers(num1, num2) {
-	if (isNaN(Number(num1)) || isNaN(Number(num2))) {
+	if (isNaN(num1) || isNaN(num2)) {
 		return 'Одно или оба значения не являются числом';
 	} else {
-		return Number(num1) * Number(num2);
+		return (num1) * (num2);
 	}
 }
 console.log(multiplyNumbers(2, 3));
@@ -71,10 +70,10 @@ console.log(cubeNumber());
 console.log(cubeNumber()); 
 console.log(cubeNumber()); 
 
-// task 7
+// task 7 corrected
 
 function getCircleArea() {
-	return 3.14 * this.radius;
+	return 3.14 * this.radius * this.radius;
 }
 function getCirclePerimeter() {
 	return this.radius * 2 * 3.14;

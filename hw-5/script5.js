@@ -42,7 +42,7 @@ function showAnwer() {
 		alert('Добро пожаловать!');
 	}
 }
-const myAnswer = showAnwer();
+showAnwer();
 
 
 // task 5 corrected
@@ -50,7 +50,7 @@ function multiplyNumbers(num1, num2) {
 	if (isNaN(num1) || isNaN(num2)) {
 		return 'Одно или оба значения не являются числом';
 	} else {
-		return (num1) * (num2);
+		return num1 * num2;
 	}
 }
 console.log(multiplyNumbers(2, 3));
@@ -73,26 +73,26 @@ console.log(cubeNumber());
 // task 7 corrected
 
 function getCircleArea() {
-	return 3.14 * this.radius * this.radius;
-}
-function getCirclePerimeter() {
-	return this.radius * 2 * 3.14;
-}
-
-const circle1 = {
+	return Math.PI * Math.pow(this.radius, 2);
+ }
+ function getCirclePerimeter() {
+	return 2 * Math.PI * this.radius;
+ }
+ 
+ const circle1 = {
 	radius: 11,
 	getArea: getCircleArea,
 	getPerimeter: getCirclePerimeter,
-};
-
-const circle2 = {
+ };
+ 
+ const circle2 = {
 	radius: 7,
 	getArea: getCircleArea,
 	getPerimeter: getCirclePerimeter,
-};
-
-console.log(circle1.getArea());
-console.log(circle1.getPerimeter());
-console.log(circle2.getArea());
-console.log(circle2.getPerimeter());
+ };
+ 
+ console.log(circle1.getArea());
+ console.log(circle1.getPerimeter());
+ console.log(circle2.getArea());
+ console.log(circle2.getPerimeter());
 

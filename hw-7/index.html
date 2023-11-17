@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	 <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>Index</title>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" >
+  </head>
+  
+  <body>
+		<div class="top center">
+			<header class="header">
+				<h1 class="title">Добро пожаловать на мой сайт !</h1>
+				<p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span>поехали</span> и <span>приступай</span></p>
+				<button class="top__btn">Поехали!</button>
+			</header>
+		</div>
+		<div class="games center">
+			<div class="games__item games__item-1"><a class="games__item-link" href="#season1" id="game1">Игра 1</a></div>
+			<div class="games__item games__item-2"><a class="games__item-link" href="#">Игра 2</a></div>
+			<div class="games__item games__item-3"><a class="games__item-link" href="#">Игра 3</a></div>
+		</div>
+		<div class="seasons center">
+			<div class="seasons__left">
+				<h1 class="title seasons__title">Времена года!</h1>
+				<p class="top__text seasons__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+			<a onclick="getSeason();" href="#game1"><button class="top__btn seasons__btn">Играть!</button></a>	
+			</div>
+			<div class="seasons__right">
+				<a class="seasons__link" href="#game1" id="season1"><img src="./img/seasons.svg" alt="seasons" class="seasons__img"></a>
+			</div>
+		</div>
+
+		<div class="seasons words center">
+			<div class="seasons__left words__right">
+				<h1 class="title seasons__title">Запомни слова </h1>
+				<p class="top__text seasons__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+			<a onclick="getWord();" href="#"><button class="top__btn seasons__btn">Играть!</button></a>	
+			</div>
+			<div class="seasons__right words__left">
+				<a class="seasons__link" href="#" id="word1"><img src="./img/words.svg" alt="words" class="seasons__img"></a>
+			</div>
+		</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="/main.js"></script>
+</body>
+</html>

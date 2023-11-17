@@ -1,24 +1,33 @@
-// task 1
+// task 1 corrected the task
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbs.length; i++) {
-	if (numbs[i] == 0) break;
-console.log(numbs[i]);
+	if (numbs[i] === 10) {
+		console.log(numbs[i]);
+		break;
+	}
+	console.log(numbs[i]);
 }
 
 // task 2
 const numbs2 = [1, 5, 4, 10, 0, 3];
 	console.log(numbs2.indexOf(4));
 
-// task 3
+// task 3 corrected the task
 let numbs3 = ['1', '3', '5', '10', '20'];
-	numbs3 = numbs3.join('');
-	console.log(numbs3);
+let result = numbs3.join(' ');
+	console.log(result);
 
 // task 4
-let arr2 = [1, 1, 1];
-for (let item of arr2) {
-	console.log(arr2);
+let arr2 = [];
+for (let item = 0; item < 3; item++) {
+	let inArr = [];
+	for (let el = 0; el < 3; el++) {
+		inArr.push(1);
+	}
+	arr2.push(inArr);
 }
+console.log(arr2);
+
 // task 5
 let numbers = [1, 1, 1];
 numbers.push(2, 2, 2);
@@ -26,8 +35,8 @@ console.log(numbers);
 
 // task 6
 let numbers2 = [9, 8, 7, 'a', 6, 5];
-numbers2 = numbers2.sort();
-let removed = numbers2.pop()
+numbers2.sort();
+numbers2 = numbers2.filter(i => typeof i === 'number');
 console.log(numbers2);
 
 // task 7

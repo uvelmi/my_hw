@@ -13,7 +13,7 @@ function getSeason() {
 		alert('Неправильный параметр. Введите число от 1 до 12!');
 		}
 	}
-console.log(getSeason());
+// console.log(getSeason());
 
 function getWord() {
 	let question = alert("Запомни слова: Яблоко, Груша, Дыня, Виноград, Персик, Апельсин, Мандарин.");
@@ -33,5 +33,5 @@ function getWord() {
 		alert('Неверно!');
 	}
 }
-console.log(getWord());
+// console.log(getWord());
 

@@ -16,22 +16,19 @@ function getSeason() {
 // console.log(getSeason());
 
 function getWord() {
-	let question = alert("Запомни слова: Яблоко, Груша, Дыня, Виноград, Персик, Апельсин, Мандарин.");
 	let fruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 	fruit = fruit.sort(() => Math.random() - 0.5);
-	alert(fruit);
-	const answerUser1 = prompt('Чему равнялся первый элемент массива?');
-	const answerUser2 = prompt('Чему равнялся последний элемент массива?');
-	const answer1 = 'Яблоко';
-	const answer2 = 'Мандарин';
+	alert(fruit.join(', '));
+	const firstFruit = prompt('Чему равнялся первый элемент массива?');
+	const lastFruit = prompt('Чему равнялся последний элемент массива?');
 
-	if (answerUser1.toLowerCase() === answer1.toLowerCase() && answerUser2.toLowerCase() === answer2.toLowerCase()) {
+	if (firstFruit.toLowerCase() === fruit[0].toLowerCase() && lastFruit.toLowerCase() === fruit[fruit.length - 1].toLowerCase()) {
 		alert('Поздравляю! Вы угадали оба элемента!');
-	} else if (answerUser1.toLowerCase() === answer1.toLowerCase() || answerUser2.toLowerCase() === answer2.toLowerCase()) {
+	} else if (firstFruit.toLowerCase() === fruit[0].toLowerCase() || lastFruit.toLowerCase() === fruit[fruit.length - 1].toLowerCase()) {
 		alert('Вы были близки к победе!');
 	} else {
 		alert('Неверно!');
 	}
 }
-// console.log(getWord());
+//  console.log(getWord());
 

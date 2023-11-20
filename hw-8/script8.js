@@ -1,4 +1,4 @@
-// task 1
+// task 1 corrected
 const people = [
 	{ name: 'Глеб', age: 29 },
 	{ name: 'Анна', age: 17 },
@@ -6,9 +6,9 @@ const people = [
 	{ name: 'Оксана', age: 47 }
 ];
 people.sort((a, b) => a.age - b.age);
-console.log(people.sort((a, b) => a.age - b.age));
+console.log(people);
 
-// task 2
+// task 2 corrected
 function isPositive(num) {
 	return num > 0;
 }
@@ -18,7 +18,13 @@ function isMale(person) {
 }
 	
 function filter(arr, condition) {
-	return arr.filter(condition);
+	const filteredArr = [];
+	for(let i = 0; i < arr.length; i++) {
+		if(condition(arr[i])) {
+			filteredArr.push(arr[i]);
+		}
+	}
+	return filteredArr;
 }
 	
 console.log(filter([3, -4, 1, 9], isPositive));
@@ -32,21 +38,24 @@ const people1 = [
 console.log(filter(people1, isMale));
 
 // task 3
-function printDate() {
+
+function timer() {
+let counter = 0;
+let interval = setInterval(function() {
+	if (counter >= 10) {
+		clearInterval(interval);
+	console.log('30 секунд прошло');
+} else {
 	console.log(new Date());
+	counter++;
 }
-
-let interval = setInterval(printDate, 3000);
-
-setTimeout(function() {
-	clearInterval(interval);
-	console.log("30 секунд прошло");
-}, 30000);
+	}, 3000);
+}
+timer();
 
 // task 4
 function delayForSecond(callback) {
 	setTimeout(callback, 1000);
-	callback();
 }
 
 delayForSecond(function () {
